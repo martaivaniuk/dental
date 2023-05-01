@@ -1,0 +1,1296 @@
+body {
+    margin: 0;
+    font-family: 'Amaranth', sans-serif;
+    font-family: 'Amiko', sans-serif;
+    background-color:#EFEBE6 ;
+    
+}
+
+* {
+    scroll-behavior: smooth;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container {
+    margin: 0px 120px;
+}
+
+
+
+.header {
+    background-image: url(./img/background.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.header-line {
+    padding-top: 23px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    
+}
+.header-logo{
+    margin-right:23px;
+}
+
+.nav-item {
+    color: #112C3C;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 21px;
+    margin-right: 15px;
+    border-right: 1px solid rgba(0,0,1,1);
+    padding-right: 21px;
+    transition: color 0.3s linear;
+
+}
+
+.nav-item:hover {
+    color:#a17f4b;
+
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top:30px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+  
+  .dropdown-content a {
+    font-weight: 400;
+    font-size: 21px;
+    color:#112C3C;
+    padding: 18px 25px;
+    text-decoration: none;
+    display: block;
+    background-color: #d8d1c6f4;
+    transition: color 0.3s linear;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #a89b87e4;
+  }
+  
+/*  */
+
+.dropdown-surgery {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown-surg:hover .dropdown-surgery {
+    display: block;
+    left:160px;
+    top:63px;
+  }
+  
+  .dropdown-surgery a {
+    color: black;
+    padding: 18px 30px;
+    text-decoration: none;
+    display: block;
+    background-color: #d8d1c6eb;
+    transition: color 0.3s linear;
+
+  }
+  
+  .dropdown-surgary a:hover {
+    background-color: #ddd;
+  }
+  
+
+
+.number {
+    text-decoration: none;
+    position:absolute;
+    top:17px;
+    right:120px
+}
+
+.num {
+    color: #112C3C;
+    text-decoration: none;   
+}
+
+.num:hover{
+    color:#695333;
+}
+
+.phone-img {
+    position: absolute;
+    right:270px;
+    top:15px;
+    transition: color 0.3s linear;
+}
+
+.lang {
+    position:absolute;
+    right:120px;
+    top: 50px;
+    
+}
+
+.header-title{
+    color:#133549;
+    font-family: 'Arsenal', sans-serif;
+    font-style:normal;
+    font-weight: 700;
+    font-size:24px;
+    line-height: 58px;
+    letter-spacing: 0.05em;
+    margin-top: 50px;
+
+}
+
+.header-suptitle{
+    color: #133549;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    margin-top: 25px;
+}
+
+.header-button{
+    background-color:#133549;
+    padding: 23px 25px;
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    color:#EFEBE6;
+    text-decoration:none;
+    transition:background-color 0.3s linear;
+    border-radius: 3px;
+}
+
+.header-button:hover{
+    background-color:#1d455d;
+}
+
+.header-btn {
+    margin-top:50px;
+}
+
+.about-us{
+    background-color:#112C3C;
+}
+
+.about-info{
+    background-color:#112C3C;
+}
+
+.about-title {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 63px;
+    color: #EFEBE6;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.about-description {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    color: #EFEBE6;
+    width: 550px;
+    padding-bottom: 40px;
+    
+}
+
+.about-button {
+    background-color:#D8D1C6;
+    padding: 12px 20px;
+    font-family: 'Amaranth', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration:none;
+    transition:background-color 0.3s linear;
+    color: #112C3C;
+}
+.about-btn {
+    padding-bottom:50px;
+}
+
+.about-button:hover{
+    background-color:#cdb891;
+}
+
+.about-holder {
+    display:flex;
+    justify-content:space-between;
+}
+
+.about-img {
+    position:relative;
+}
+.about-img1{
+    padding-top:51px;
+    padding-right: 3px;
+}
+
+
+.team {
+    background-color:#EFEBE6;
+    padding-bottom:40px;
+}
+
+h3{
+    margin-top: -10px;
+    margin-bottom: 2%;
+}
+
+.team-title {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 63px;
+    color: #133549;
+    text-align: center;
+    padding-top:14px;
+
+}
+
+.team-item1 {
+    background-color:#112C3C;
+    text-align:center;
+    width:32%;
+    padding-top:30px;
+    padding-bottom:30px;
+    transition:background-color 0.3s linear;
+    
+}
+
+.team-item1:hover {
+    background-color:#2d4554 ;
+}
+
+
+
+.team-text {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    color: #D8D1C6;
+}
+
+.team-prof-text {
+    font-family: 'Arsenal', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #EFEBE6;
+}
+
+.team-subtext {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: #EFEBE6;
+}
+
+.team-btn1 {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #112C3C;
+    background-color:#EFEBE6;
+    text-decoration:none;
+    transition:background-color 0.3s linear;
+    padding: 10px 24px;
+}
+
+.team-btn1:hover {
+    background-color:#d3b793; 
+}
+
+.team-button1 {
+    margin-top:30px;
+}
+
+.team-items {
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+
+.three-dots{
+    display:flex;
+    justify-content:center;
+    padding-top: 20px;
+}
+
+.service-item{
+    display:flex;
+    justify-content:space-between;  
+
+}
+
+.service-title {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 63px;
+    color: #EFEBE6;
+    text-align:left;
+    padding-top:14px;
+}
+
+.service {
+    background-color:#112C3C;;
+}
+
+.service-txt{
+    border: 3px solid #EFEBE6;
+    padding: 28px 40px;
+}
+.service-subtitle {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color:#FFFFFF;
+    padding-bottom: 25px;
+
+}
+
+.service-txt1 {
+    text-decoration:none;
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color:#FFFFFF;
+    transition:background-color 0.3s linear;
+}
+
+.service-txt1:hover{
+    color:#ded2bf;
+}
+.service-more {
+    font-family: 'Arsenal', sans-serif ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #D8D1C6;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    transition:background-color 0.3s linear;
+}
+
+.service-more:hover{
+    color:#c3a989;; 
+}
+
+.service-btn {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #133549;
+    background-color:#EFEBE6;
+    text-decoration:none;
+    transition:background-color 0.3s linear;
+    padding: 10px 25px;
+}
+
+.service-btn:hover {
+    background-color:#c3b4a1; 
+}
+
+.service-item{
+    padding-bottom: 30px;
+}
+
+
+.service-aall {
+    font-family: 'Arsenal', sans-serif ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    transition:background-color 0.3s linear;
+}
+
+.service-aall:hover{
+    color:#c3a989;
+}
+
+.service-all{
+    display:flex;
+    justify-content:center;
+    padding-bottom: 20px;
+}
+
+.before-after-title {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 63px;
+    color: #112C3C;
+    padding-top: 20px;
+    
+
+}
+
+.before-after-photo {
+    display:flex;
+    justify-content:space-between;
+    padding-bottom: 20px;
+    
+}
+
+.before-after {
+    background-color:#EFEBE6;
+}
+
+.before-after-photo2 {
+    display:flex;
+    justify-content:space-between;
+   
+}
+
+
+.before-after-video {
+    text-align: center;
+    padding-bottom:20px;
+    position:relative;
+}
+
+.video {
+    
+    top:0;
+    left:0;
+}
+.three-dots2{
+    display:flex;
+    justify-content:center;
+    padding:10px;
+}
+
+
+.b-button {
+    width: 280px;
+    height: 65px;
+    background-color: #3c4c60;
+    display:block;
+    margin: 0 auto;
+    border-radius: 1px;
+    color:#e7eef1;
+    text-transform: uppercase;
+    
+    
+    font-size: 30px;
+    border:none;
+    cursor:pointer;
+}
+
+.b-button:hover {
+    background-color:#55697c ;
+}
+
+.form-title {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    color: #EFEBE6;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+
+input {
+    height:45px;
+    width: 100%;
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color:#091923 ;
+    padding-left:20px;
+    
+}
+
+.register-form-container {
+    background: #133549;
+    max-width: 415px;
+    border-radius:2px;
+    padding-right:30px;
+    padding-left: 30px;
+    padding-top:15px;
+    padding-bottom: 25px;
+}
+
+.form-field {
+    margin-bottom:20px; 
+ }
+
+.button{
+    width: 150px;
+    height: 40px;
+    background-color: #e3eaf3;
+    display:block;
+    margin: 0 auto;
+    border-radius: 1px;
+    color:#133549;
+    text-transform: uppercase;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border:none;
+    cursor:pointer;
+       
+}
+
+.button:hover {
+    background-color:#d1be9f ;
+}
+
+.footer {
+    background-color: #D8D1C6;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+ .footer-items {
+    display:flex;
+    justify-content: space-around;
+}
+
+.time-title {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    color: #133549;
+    text-align: center;
+}
+
+.time-hour {
+    font-family: 'Arsenal',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.contact-title {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    color: #133549;
+    text-align: center;
+}
+
+.contact-text {
+    font-family: 'Arsenal',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.contact-information {
+    margin-bottom: 40px;
+}
+
+.time-work {
+    margin-bottom: 40px;
+}
+
+.location {
+    margin-top: 40px;
+}
+    
+    
+.contact-img{
+    text-align: center;
+    padding-top:10px;
+}
+
+.location-title {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    color: #133549;
+    text-align: center;
+}
+
+.location-text{
+    font-family: 'Arsenal',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+
+#burger, [for=burger]{
+    display:none;
+}
+
+
+.menu{
+    display:none;
+}
+
+@media (max-width:1118px){
+    .nav{
+        display:none;
+        
+    }
+
+    [for=burger]{
+        display:block;
+        text-align: center;
+        position:fixed;
+        right:120px;
+        top: 60px;
+    }
+
+    
+
+    .menu{
+        
+        display: none;
+        position:fixed;
+        top:40px;
+        right:4px;
+        margin-top:52px;
+        background:#e4dccccf;
+        margin-left:400px;
+        font-family: 'Arsenal', sans-serif;
+        font-style: normal;
+        color: #112C3C;
+        font-weight: 600;
+        font-size: 25px;
+        line-height:40px;
+        padding:30px;
+        border-radius: 5px;
+        text-align: end;
+    }
+    
+
+
+    .mb {
+        text-decoration: none;
+        color: #112C3C;
+        transition: color 0.3s linear;
+    }
+
+    .mb:hover{
+        color: #4b5e6b;
+    }
+        
+    
+    #burger:checked + label + .menu {
+        display: block;
+    }
+
+    nav ul{
+        margin:0;
+        padding:0;
+        list-style-type:none;
+    }
+    
+
+}
+
+
+@media (max-width:464px){
+
+
+.container{
+    margin: 0px 0px;
+}
+    .burg {
+        
+        margin-top:0px;
+        position:absolute;
+        justify-content: space-around;
+        margin-left:30px;
+      }
+
+      .menu{
+        
+        background:#d8d1c6e4;
+        font-family: 'Arsenal', sans-serif;
+        font-style: normal;
+        color: #112C3C;
+        font-weight: 600;
+        font-size: 20px;
+        line-height:30px;
+        padding:30px;
+        
+      }
+
+    .logoo{
+        width:100%;
+        margin-top:10px;
+    }
+
+    .header-logo{
+        width:140px;
+       
+
+    }
+}
+
+
+
+@media (max-width:1254px){
+    .nav{
+        font-size:10px;
+        
+    }
+    .num{
+        display:none;
+    }
+    
+    .mova{
+        display:none;
+    }
+    .phone-im{
+        display:none;
+    }
+
+    .header-title {
+        margin-top:20px;
+        margin-top:20px;
+
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .header-button{
+        font-size:20px;
+        padding:20px 30px;
+    }
+    
+
+    .about-img1{
+        height: 450px;
+        width:300px;
+    }
+    .about-description{
+        font-size: 24px;
+        max-width: 450px;
+        line-height: 20px;
+    }
+    .about-info{
+        background-color:#112C3C;
+    }
+    
+     .team-img1{
+        height:380px;
+        width:300px;
+    }
+     
+    .team-items{
+        display:block;
+        
+    }
+    .team-item1 {
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:20px;
+        width:400px;
+    }
+
+    .team-subtext{
+        font-size:25px;
+    }
+
+.service-item{
+    display:block;
+    justify-content:space-around;
+
+    
+}
+
+.service-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.service-items{
+   text-align: center;
+   justify-content: none;
+}
+
+.service-text{
+   text-align: center;
+}
+
+.service-txt{
+    max-width: 400px;
+}
+
+.service-img {
+    padding-top:15px;
+}
+
+.team-img1 {
+    padding-right:20px;
+}
+
+.before-after-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+  }
+  
+  .works-images {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .before-after-photo2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+  }
+
+.dots2 {
+    display:none;
+}
+
+
+@media (max-width:1000px){
+    .header-title {
+        font-size: 20px;
+        line-height: 40px;
+        padding-top:30px;
+    }
+
+    .header-suptitle {
+        font-size: 25px;
+        line-height: 25px; 
+    }
+
+    .header-button {
+        padding: 15px 10px;
+    }
+
+
+}
+}
+
+@media (max-width:895px){
+    .header-title {
+        font-size: 20px;
+        line-height: 40px;
+        padding-top:30px;
+    }
+
+    .header-suptitle {
+        font-size: 25px;
+        line-height: 25px; 
+    }
+
+    .header-button {
+        padding: 15px 10px;
+    }
+
+    .about-img1{
+        height: 450px;
+        width:279px;
+    }
+    .about-description{
+        font-size: 20px;
+        max-width: 400px;
+        line-height: 20px;
+    }
+    .about-info{
+        background-color:#112C3C;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width:895px){
+    .about-img1{
+        height: 400px;
+        width:250px;
+    }
+    .about-description{
+        font-size: 17px;
+        max-width: 300px;
+        line-height: 15px;
+        font-weight: 200;
+    }
+    
+
+}
+
+@media (max-width:793px){
+    .about-img1{
+        height: 400px;
+        width:230px;
+    }
+    .about-description{
+        font-size: 15px;
+        max-width: 230px;
+        line-height: 15px;
+        font-weight: 200;
+        margin-bottom:-20px;
+    }
+    
+    .about-title{
+        font-size:30px;
+        margin-bottom:-20px;
+    }
+    .about-button {
+        font-size: 20px;
+        padding:5px 10px;
+
+    }
+}
+
+@media (max-width:707px){
+    .header-title {
+        font-size: 15px;
+        line-height: 35px;
+        padding-top:30px;
+    }
+
+    .header-suptitle {
+        font-size: 20px;
+        line-height: 20px; 
+    }
+
+    .header-button {
+        padding: 15px 10px;
+    }
+
+    .about-img1{
+        height: 370px;
+        width:220px;
+    }
+    .about-description{
+        font-size: 13px;
+        max-width: 210px;
+        line-height: 15px;
+        font-weight: 200;
+        margin-bottom:-20px;
+    }
+    
+    .about-title{
+        font-size:30px;
+        margin-bottom:-20px;
+    }
+    .about-button {
+        font-size: 20px;
+        padding:5px 10px;
+
+    }
+
+    .team-title{
+        font-size:30px;
+    }
+
+    .service-img{
+        height:300px;
+        width:400px;
+    }
+
+    .video {
+        height:150px;
+        width:400px;
+        align-items: center;
+
+    }
+
+    input {
+    font-size:15px;
+    }
+
+    .time-title {
+        font-size:20px;
+    }
+
+    .time-hour {
+        font-size:15px;
+    }
+
+    .contact-title{
+        font-size:20px;
+    }
+
+    .contact-text{
+        font-size: 15px;
+    }
+
+    .location-title {
+        font-size:20px;
+    }
+
+    .location-text{
+        font-size:15px;
+    }
+}
+
+@media(max-width:579px){
+
+    .container{
+        margin: 0px 80px;
+    }
+    /* .logoo{
+        height:70;
+        width: 170px;
+    } */
+
+    .header-title {
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .header-button{
+        font-size:20px;
+    }
+    
+
+    .about-img1{
+        height: 340px;
+        width:200px;
+    }
+    .about-description{
+        font-size: 12px;
+        max-width: 170px;
+        line-height: 13px;
+        font-weight: 200;
+        margin-bottom:-20px;
+    }
+    
+    .about-title{
+        font-size:15px;
+        margin-bottom:-30px;
+    }
+    .about-button {
+        font-size: 10px;
+        padding:5px 10px;
+
+    }
+
+    input{
+        font-size:13px;
+        max-width:390px;
+    }
+
+    
+    .form-title{
+        font-size:20px;
+    }
+
+    .video{
+        display:none;
+    }
+
+    .register-form-container{
+       display:none; 
+    }
+
+    .dots{
+        display:none;
+    }
+
+    .team-items{
+        justify-content: center;
+    }
+
+}
+
+
+
+@media (max-width:565px){
+    
+/* для розміру 390 */
+
+.container{
+    margin: 0px 50px;
+}
+.about-img1{
+    height: 370px;
+    width:160px;
+}
+.about-description{
+    font-size: 10px;
+    max-width: 140px;
+    line-height: 14px;
+    font-weight: 200;
+    margin-bottom:-30px;
+}
+
+
+
+.about-title{
+    font-size:19px;
+    margin-bottom:-30px;
+}
+.about-button {
+    font-size: 10px;
+    padding:5px 10px;
+
+}
+
+.team-title{
+    font-size:5px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #133549;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.team-items{
+    margin-right:200px
+}
+
+.team-item1 {
+    justify-content: center;
+    margin-bottom:20px;
+    width:300px;
+}
+.team-subtext{
+    font-size:20px;
+
+}
+
+.team-text{
+    font-size:22px;
+    
+}
+
+.team-img1{
+        height:300px;
+        width:270px;
+        padding-right:0;
+}
+
+.service-img{
+    height:200px;
+    width:280px;
+}   
+
+.service-subtitle{
+    font-size:23px;
+    padding-bottom: 0;
+    padding-bottom:5px;
+}
+
+.service-txt1{
+    font-size:16px;
+    line-height: 10px;
+}
+
+.service-more{
+    font-size:15px;
+}
+
+.service-btn{
+    font-size:15px;
+}
+
+.before-after-title{
+    font-size:25px;
+    line-height: 30px;
+    padding-bottom: 0;
+}
+
+.video{
+    display: block;
+    text-align: center;
+    padding:0;
+    margin:0;
+    width:300px;
+}
+    
+}
